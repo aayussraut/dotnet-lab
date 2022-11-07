@@ -1,0 +1,26 @@
+﻿@model _10_phonebook.Models.PhonebookModel
+<form method="post">
+	<div class="border p-3 mt-4">
+		<div class="row pb-2">
+			<h2 class="text-primary">Add Data</h2>
+			<hr />
+		</div>
+		<div class="mb-3">
+			<label asp-for="Name"></label>
+			<input asp-for="Name" class="form-control" />
+			
+		</div>
+		<div class="mb-3">
+			<label asp-for="Number"></label>
+			<input asp-for="Number" class="form-control" />
+			
+		</div>
+		<div class="mb-3">
+			<label asp-for="Email"></label>
+			<input asp-for="Email" class="form-control" />
+			
+		</div>
+
+		<button type="submit" class="btn btn-primary" style="width:150px">Add</button>
+	</div>
+</form>

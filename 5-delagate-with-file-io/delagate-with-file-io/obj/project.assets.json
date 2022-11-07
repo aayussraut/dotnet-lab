@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "K:\\MBM\\CS\\lab\\delagate-with-file-io\\delagate-with-file-io\\delagate-with-file-io.csproj",
+      "projectUniqueName": "A:\\MBM\\CS\\lab\\5-delagate-with-file-io\\delagate-with-file-io\\delagate-with-file-io.csproj",
       "projectName": "delagate-with-file-io",
-      "projectPath": "K:\\MBM\\CS\\lab\\delagate-with-file-io\\delagate-with-file-io\\delagate-with-file-io.csproj",
+      "projectPath": "A:\\MBM\\CS\\lab\\5-delagate-with-file-io\\delagate-with-file-io\\delagate-with-file-io.csproj",
       "packagesPath": "C:\\Users\\iush\\.nuget\\packages\\",
-      "outputPath": "K:\\MBM\\CS\\lab\\delagate-with-file-io\\delagate-with-file-io\\obj\\",
+      "outputPath": "A:\\MBM\\CS\\lab\\5-delagate-with-file-io\\delagate-with-file-io\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\iush\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AP9oQUvCOPXjZqnGuwAI7N4Eu0cT2Jc4teViJIpnkysXUXSghVU5//CdHfaIzN2vm+KdvAPJEI9MydrQND85UA==",
+  "dgSpecHash": "hQZbRPpEMIVIOp5adCjFnOgKsjP3/h6bx4WfVdhWqF1Fu5ImKwZp84MwyKj1SwGjLGW6kXqfg8nRAd+zycXNag==",
   "success": true,
-  "projectFilePath": "A:\\MBM\\CS\\lab\\DataTransfer\\DataTransfer\\DataTransfer.csproj",
+  "projectFilePath": "A:\\MBM\\CS\\lab\\4-DataTransfer\\DataTransfer\\DataTransfer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

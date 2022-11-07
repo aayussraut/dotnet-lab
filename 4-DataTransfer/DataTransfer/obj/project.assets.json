@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\MBM\\CS\\lab\\DataTransfer\\DataTransfer\\DataTransfer.csproj",
+      "projectUniqueName": "A:\\MBM\\CS\\lab\\4-DataTransfer\\DataTransfer\\DataTransfer.csproj",
       "projectName": "DataTransfer",
-      "projectPath": "A:\\MBM\\CS\\lab\\DataTransfer\\DataTransfer\\DataTransfer.csproj",
+      "projectPath": "A:\\MBM\\CS\\lab\\4-DataTransfer\\DataTransfer\\DataTransfer.csproj",
       "packagesPath": "C:\\Users\\iush\\.nuget\\packages\\",
-      "outputPath": "A:\\MBM\\CS\\lab\\DataTransfer\\DataTransfer\\obj\\",
+      "outputPath": "A:\\MBM\\CS\\lab\\4-DataTransfer\\DataTransfer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\iush\\AppData\\Roaming\\NuGet\\NuGet.Config",

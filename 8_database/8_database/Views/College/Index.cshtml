@@ -1,0 +1,25 @@
+﻿@model List<_8_database.Models.CollegeModel>
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Number</th>
+            <th>Email</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Number</td>
+                <td>@item.Email</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,47 @@
+﻿@model List<_10_phonebook.Models.PhonebookModel>
+<div style="margin:30px;margin-left:0px">
+    <button>
+        <a class="nav-link text-dark"  asp-controller="Phonebook" asp-action="Create">
+            Add Phonebook
+        </a>
+    </button>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Number</th>
+            <th>Email</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Number</td>
+                <td>@item.Email</td>
+                <td>
+                   @* @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary" })*@
+                    <button class="btn btn-primary">
+                        <a class="nav-link text-white" asp-controller="Phonebook" asp-action="Edit" asp-route-id=@item.Id>
+                           Edit
+                        </a>
+                    </button>
+                </td>
+                <td>
+                    <button class="btn btn-danger">
+                        <a class="nav-link text-white" asp-controller="Phonebook" asp-action="Delete" asp-route-id=@item.Id>
+                            Delete
+                        </a>
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,15 @@
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\bin\Debug\net6.0\delagate-with-file-io.exe
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\bin\Debug\net6.0\delagate-with-file-io.deps.json
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\bin\Debug\net6.0\delagate-with-file-io.runtimeconfig.json
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\bin\Debug\net6.0\delagate-with-file-io.dll
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\bin\Debug\net6.0\delagate-with-file-io.pdb
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\obj\Debug\net6.0\delagate-with-file-io.csproj.AssemblyReference.cache
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\obj\Debug\net6.0\delagate-with-file-io.GeneratedMSBuildEditorConfig.editorconfig
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\obj\Debug\net6.0\delagate-with-file-io.AssemblyInfoInputs.cache
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\obj\Debug\net6.0\delagate-with-file-io.AssemblyInfo.cs
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\obj\Debug\net6.0\delagate-with-file-io.csproj.CoreCompileInputs.cache
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\obj\Debug\net6.0\delagate-with-file-io.dll
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\obj\Debug\net6.0\refint\delagate-with-file-io.dll
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\obj\Debug\net6.0\delagate-with-file-io.pdb
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\obj\Debug\net6.0\delagate-with-file-io.genruntimeconfig.cache
+A:\MBM\CS\lab\delagate-with-file-io\delagate-with-file-io\obj\Debug\net6.0\ref\delagate-with-file-io.dll

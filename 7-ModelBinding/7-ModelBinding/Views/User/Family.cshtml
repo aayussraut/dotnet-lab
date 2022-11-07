@@ -1,0 +1,71 @@
+﻿@model FamilyModel
+
+@using (var form = Html.BeginForm())
+{
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.id)
+            </div>
+            <div class="col-md-9">
+                @Html.TextBoxFor(m => m.id)
+                @Html.ValidationMessageFor(m => m.id)
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.full_name)
+            </div>
+            <div class="col-md-9">
+                @Html.TextBoxFor(m => m.full_name)
+                @Html.ValidationMessageFor(m => m.full_name)
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.gender)
+            </div>
+            <div class="col-md-9">
+                @Html.DropDownListFor(m => m.gender, new List<SelectListItem>
+            {
+            new SelectListItem{Text = "Select Gender", Value = "0"},
+            new SelectListItem{Text = "Male", Value = "Male"},
+            new SelectListItem{Text = "Female", Value = "Female"},
+            })
+                @Html.ValidationMessageFor(m => m.gender)
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.age)
+            </div>
+            <div class="col-md-9">
+                @Html.TextBoxFor(m => m.age, new {@type = "number"})
+                @Html.ValidationMessageFor(m => m.age)
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-3">
+                @Html.LabelFor(m => m.relation)
+            </div>
+            <div class="col-md-9">
+                @Html.DropDownListFor(m => m.relation,
+            new SelectList(Enum.GetValues(typeof(Relation))),
+            "Select Relation")
+                @Html.ValidationMessageFor(m => m.relation)
+            </div>
+        </div>
+
+        <div class="row mt-2">
+            <div class="col-md-3">
+                &nbsp;
+            </div>
+            <div class="col-md-9">
+                <input type="submit" value="Submit" />
+            </div>
+        </div>
+    </div>
+}

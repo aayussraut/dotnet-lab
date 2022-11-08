@@ -1,0 +1,56 @@
+﻿@page
+@model IndexModel
+
+
+
+<div class="w-50">
+    <form id="login-form" method="">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input class="form-control" type="text" name="name" id="name" />
+            <div class="name-error text-danger"></div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input class="form-control" type="password" name="password" id="password" />
+            <div class="password-error text-danger"></div>
+        </div>
+        <div class="form-group">
+            <br /><button type="submit" class="btn btn-primary">Login</button>
+        </div>
+    </form>
+    <br />
+    <div class="success"></div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        let form = document.getElementById("login-form");
+        let nameError = $('.name-error');
+        let passwordError = $('.password-error');
+        form.addEventListener('submit', (e)=>{
+            e.preventDefault();
+            
+            let name = $('#name').val();
+            let password = $('#password').val();
+            
+            nameError.text('');
+            passwordError.text('');
+            
+            if(name[0] != name[0].toUpperCase()){
+                nameError.text("Name should start with capital letter");
+                return false;
+            }
+            if(!password.endsWith('$')){
+                
+                passwordError.text("Password should contain $ at the end");
+                return false;
+            }
+            
+            $('.success').text('Success').addClass('alert alert-success');
+            return true;
+        })
+
+    });
+</script>

@@ -1,0 +1,15 @@
+A:\MBM\CS\lab\2_inheritance\2_inheritance\bin\Debug\net6.0\2_inheritance.exe
+A:\MBM\CS\lab\2_inheritance\2_inheritance\bin\Debug\net6.0\2_inheritance.deps.json
+A:\MBM\CS\lab\2_inheritance\2_inheritance\bin\Debug\net6.0\2_inheritance.runtimeconfig.json
+A:\MBM\CS\lab\2_inheritance\2_inheritance\bin\Debug\net6.0\2_inheritance.dll
+A:\MBM\CS\lab\2_inheritance\2_inheritance\bin\Debug\net6.0\2_inheritance.pdb
+A:\MBM\CS\lab\2_inheritance\2_inheritance\obj\Debug\net6.0\2_inheritance.csproj.AssemblyReference.cache
+A:\MBM\CS\lab\2_inheritance\2_inheritance\obj\Debug\net6.0\2_inheritance.GeneratedMSBuildEditorConfig.editorconfig
+A:\MBM\CS\lab\2_inheritance\2_inheritance\obj\Debug\net6.0\2_inheritance.AssemblyInfoInputs.cache
+A:\MBM\CS\lab\2_inheritance\2_inheritance\obj\Debug\net6.0\2_inheritance.AssemblyInfo.cs
+A:\MBM\CS\lab\2_inheritance\2_inheritance\obj\Debug\net6.0\2_inheritance.csproj.CoreCompileInputs.cache
+A:\MBM\CS\lab\2_inheritance\2_inheritance\obj\Debug\net6.0\2_inheritance.dll
+A:\MBM\CS\lab\2_inheritance\2_inheritance\obj\Debug\net6.0\refint\2_inheritance.dll
+A:\MBM\CS\lab\2_inheritance\2_inheritance\obj\Debug\net6.0\2_inheritance.pdb
+A:\MBM\CS\lab\2_inheritance\2_inheritance\obj\Debug\net6.0\2_inheritance.genruntimeconfig.cache
+A:\MBM\CS\lab\2_inheritance\2_inheritance\obj\Debug\net6.0\ref\2_inheritance.dll

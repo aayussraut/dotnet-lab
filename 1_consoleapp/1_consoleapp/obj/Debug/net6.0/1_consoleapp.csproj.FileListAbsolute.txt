@@ -1,0 +1,15 @@
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\bin\Debug\net6.0\1_consoleapp.exe
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\bin\Debug\net6.0\1_consoleapp.deps.json
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\bin\Debug\net6.0\1_consoleapp.runtimeconfig.json
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\bin\Debug\net6.0\1_consoleapp.dll
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\bin\Debug\net6.0\1_consoleapp.pdb
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\obj\Debug\net6.0\1_consoleapp.csproj.AssemblyReference.cache
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\obj\Debug\net6.0\1_consoleapp.GeneratedMSBuildEditorConfig.editorconfig
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\obj\Debug\net6.0\1_consoleapp.AssemblyInfoInputs.cache
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\obj\Debug\net6.0\1_consoleapp.AssemblyInfo.cs
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\obj\Debug\net6.0\1_consoleapp.csproj.CoreCompileInputs.cache
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\obj\Debug\net6.0\1_consoleapp.dll
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\obj\Debug\net6.0\refint\1_consoleapp.dll
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\obj\Debug\net6.0\1_consoleapp.pdb
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\obj\Debug\net6.0\1_consoleapp.genruntimeconfig.cache
+A:\MBM\CS\lab\1_consoleapp\1_consoleapp\obj\Debug\net6.0\ref\1_consoleapp.dll

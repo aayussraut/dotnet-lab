@@ -1,0 +1,64 @@
+﻿@page
+
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+
+}
+@ViewData["unsucess"]
+@Model.WelcomeMessage
+@*@{
+    if (@Model.WelcomeMessage)
+    {
+
+    }
+}*@
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<form id="first-form" method="post">
+    <label class="form-label">Name</label>
+    <input type="text" name="name" id="name" class="form-text" />
+    <br />
+    <label class="form-label">Password</label>
+    <input type="password" name="password" id="password" class="form-text" />
+    <br />
+    <button class="btn btn-primary" type="submit">Submit</button>
+
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js">
+
+</script>
+
+<script>
+    $(document).ready(function () {
+        var form=$("#first-form");
+        
+        form.addEventListener("submit",function (e) {
+            var isValid=true;
+            e.preventDefault();
+            var name = $('#name').val();
+
+            var password = $('#password').val();
+
+            $(".error").remove();
+
+            if (name.length < 1) {
+                $('#name').after('<span class="error">This field is required</span>');
+                isValid=false;
+            }
+            if (!password.endsWith("$")) {
+                $('#password').after('<span class="error">Password must end with $</span>');
+                isValid= false;
+            }
+            if(isValid){
+                form.submit();
+            }
+        }
+        )
+    })
+</script>

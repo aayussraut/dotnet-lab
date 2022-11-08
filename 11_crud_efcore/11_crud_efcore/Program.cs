@@ -2,9 +2,11 @@
 using Microsoft.Extensions.DependencyInjection;
 using _11_crud_efcore.Data;
 var builder = WebApplication.CreateBuilder(args);
+var serverVersion = new MySqlServerVersion(new Version(8, 0, 27));
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("AppDbContext") ?? throw new InvalidOperationException("Connection string 'AppDbContext' not found.")));
-
+{
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"), serverVersion);
+});
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 

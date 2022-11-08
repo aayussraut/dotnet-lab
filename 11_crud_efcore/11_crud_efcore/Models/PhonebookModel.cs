@@ -10,6 +10,6 @@ namespace _11_crud_efcore.Models
         [Required]
         public string Name { get; set; } = "";
         [DisplayName("Contact Number")]
-        public int Number { get; set; }
+        public string Number { get; set; }
     }
 }

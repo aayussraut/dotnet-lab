@@ -262,3 +262,5 @@ A:\MBM\CS\lab\11_crud_efcore\11_crud_efcore\obj\Debug\net6.0\refint\11_crud_efco
 A:\MBM\CS\lab\11_crud_efcore\11_crud_efcore\obj\Debug\net6.0\11_crud_efcore.pdb
 A:\MBM\CS\lab\11_crud_efcore\11_crud_efcore\obj\Debug\net6.0\11_crud_efcore.genruntimeconfig.cache
 A:\MBM\CS\lab\11_crud_efcore\11_crud_efcore\obj\Debug\net6.0\ref\11_crud_efcore.dll
+A:\MBM\CS\lab\11_crud_efcore\11_crud_efcore\bin\Debug\net6.0\MySqlConnector.dll
+A:\MBM\CS\lab\11_crud_efcore\11_crud_efcore\bin\Debug\net6.0\Pomelo.EntityFrameworkCore.MySql.dll

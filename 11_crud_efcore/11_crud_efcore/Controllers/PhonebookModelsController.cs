@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using _11_crud_efcore.Data;
 using _11_crud_efcore.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace _11_crud_efcore.Controllers
 {
@@ -20,112 +15,70 @@ namespace _11_crud_efcore.Controllers
         }
 
         // GET: PhonebookModels
-        public async Task<IActionResult> Index()
+        public IActionResult Index()
         {
-              return View(await _context.PhonebookModel.ToListAsync());
+            return View(_context.Phonebook.ToList());
         }
 
-        // GET: PhonebookModels/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null || _context.PhonebookModel == null)
-            {
-                return NotFound();
-            }
-
-            var phonebookModel = await _context.PhonebookModel
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (phonebookModel == null)
-            {
-                return NotFound();
-            }
-
-            return View(phonebookModel);
-        }
-
-        // GET: PhonebookModels/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: PhonebookModels/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Number")] PhonebookModel phonebookModel)
+        public IActionResult Create(PhonebookModel phonebookdata)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(phonebookModel);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                _context.Add(phonebookdata);
+                _context.SaveChanges();
+                return RedirectToAction("Index");
             }
-            return View(phonebookModel);
+            return View(phonebookdata);
         }
 
         // GET: PhonebookModels/Edit/5
-        public async Task<IActionResult> Edit(int? id)
+        public IActionResult Edit(int? id)
         {
-            if (id == null || _context.PhonebookModel == null)
+            if (id == null || id==0)
             {
                 return NotFound();
             }
 
-            var phonebookModel = await _context.PhonebookModel.FindAsync(id);
-            if (phonebookModel == null)
+            var phonebookdata = _context.Phonebook.Find(id);
+            if (phonebookdata == null)
             {
                 return NotFound();
             }
-            return View(phonebookModel);
+            return View(phonebookdata);
         }
 
-        // POST: PhonebookModels/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Number")] PhonebookModel phonebookModel)
+        public IActionResult Edit(PhonebookModel phonebookdata)
         {
-            if (id != phonebookModel.Id)
-            {
-                return NotFound();
-            }
 
             if (ModelState.IsValid)
             {
-                try
-                {
-                    _context.Update(phonebookModel);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!PhonebookModelExists(phonebookModel.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
+
+                _context.Phonebook.Update(phonebookdata);
+                _context.SaveChanges();
                 return RedirectToAction(nameof(Index));
+
             }
-            return View(phonebookModel);
+            return View(phonebookdata);
         }
 
         // GET: PhonebookModels/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        public IActionResult Delete(int? id)
         {
-            if (id == null || _context.PhonebookModel == null)
+            if (id == null || id==0)
             {
                 return NotFound();
             }
 
-            var phonebookModel = await _context.PhonebookModel
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var phonebookModel = _context.Phonebook.Find(id);
             if (phonebookModel == null)
             {
                 return NotFound();
@@ -135,27 +88,14 @@ namespace _11_crud_efcore.Controllers
         }
 
         // POST: PhonebookModels/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
+        public IActionResult Delete(PhonebookModel phonebookdata)
         {
-            if (_context.PhonebookModel == null)
-            {
-                return Problem("Entity set 'AppDbContext.PhonebookModel'  is null.");
-            }
-            var phonebookModel = await _context.PhonebookModel.FindAsync(id);
-            if (phonebookModel != null)
-            {
-                _context.PhonebookModel.Remove(phonebookModel);
-            }
-            
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
+            _context.Phonebook.Remove(phonebookdata);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
 
-        private bool PhonebookModelExists(int id)
-        {
-          return _context.PhonebookModel.Any(e => e.Id == id);
         }
     }
 }

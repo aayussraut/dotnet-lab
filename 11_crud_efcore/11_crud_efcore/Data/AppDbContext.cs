@@ -14,6 +14,6 @@ namespace _11_crud_efcore.Data
         {
         }
 
-        public DbSet<_11_crud_efcore.Models.PhonebookModel> PhonebookModel { get; set; } = default!;
+        public DbSet<PhonebookModel> Phonebook { get; set; }
     }
 }

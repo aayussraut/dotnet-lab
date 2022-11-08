@@ -31,10 +31,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmVib29rTW9kZWxzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[A:/MBM/CS/lab/11_crud_efcore/11_crud_efcore/Views/PhonebookModels/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmVib29rTW9kZWxzXERldGFpbHMuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [A:/MBM/CS/lab/11_crud_efcore/11_crud_efcore/Views/PhonebookModels/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhvbmVib29rTW9kZWxzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
